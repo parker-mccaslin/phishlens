@@ -1,0 +1,1 @@
+Your bank account was locked for unusual activity. Verify your card details now at https://secure-bank.example.test

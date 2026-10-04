@@ -1,0 +1,22 @@
+.category-pill{display:inline-flex;margin-top:9px;padding:5px 8px;border:1px solid #f3dfc3;background:#fff8ed;color:#a27131;border-radius:12px;font-size:9px;font-weight:600}
+.indicator-content{min-width:0;flex:1}
+.indicator-content>strong{display:block}
+.indicator-url{font-size:9px;color:#7966c8;overflow-wrap:anywhere;margin-top:3px}
+.indicator details{margin-top:4px}
+.indicator summary{list-style:none;display:inline-flex;align-items:center;cursor:pointer;color:#7966c8;font-size:9px;font-weight:600}
+.indicator summary::-webkit-details-marker{display:none}
+.indicator summary::after{content:'+';font-size:12px;margin-left:5px}
+.indicator details[open] summary::after{content:'−'}
+.indicator details p{font-size:9px;line-height:1.5;color:var(--muted);margin:5px 0 1px;overflow-wrap:anywhere}
+.status-tag.unknown{color:#828999;background:#f0f1f4}
+.example-card{min-height:190px}
+.risk-dot.risk-low-risk{background:#56ad84}
+.domain-setting p{max-width:610px;line-height:1.6}
+.toggle{display:inline-flex;align-items:center;flex:0 0 auto;cursor:pointer}
+.toggle input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.toggle span{position:relative;display:block;width:42px;height:24px;border-radius:999px;background:#c9ced8;transition:background .18s ease}
+.toggle span::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0002;transition:transform .18s ease}
+.toggle input:checked+span{background:#7664c5}
+.toggle input:checked+span::after{transform:translateX(18px)}
+.toggle input:focus-visible+span{outline:3px solid #b9aaff;outline-offset:2px}
+.toggle input:disabled+span{opacity:.55;cursor:wait}
