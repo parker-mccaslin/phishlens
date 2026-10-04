@@ -9,9 +9,9 @@ PhishLens is a local-first Debian/Ubuntu tool for reviewing suspicious messages.
 ./scripts/run.sh
 ```
 
-Open http://127.0.0.1:8000. The installer uses `sudo` only when it needs to install missing system packages with apt. Node.js is needed for the frontend build, not when running PhishLens. A modern Node/npm installation is expected for development; install it separately if absent.
+PhishLens uses the fixed local address http://127.0.0.1:7834. The installer uses `sudo` only when it needs to install missing system packages with apt. Node.js is needed for the frontend build, not when running PhishLens. A modern Node/npm installation is expected for development; install it separately if absent.
 
-For development, activate `.venv`, install `requirements.txt`, run `npm --prefix frontend install`, then `npm --prefix frontend run build`. Start the server with `uvicorn backend.main:app --host 127.0.0.1 --port 8000`.
+For development, activate `.venv`, install `requirements.txt`, run `npm --prefix frontend install`, then `npm --prefix frontend run build`. Start the server with `uvicorn backend.main:app --host 127.0.0.1 --port 7834`.
 
 Run checks with `.venv/bin/pytest` and `npm --prefix frontend run build`.
 
